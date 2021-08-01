@@ -14,3 +14,6 @@ Before running code on your system make sure you have following libraries instal
 * **pip install opencv-contrib-python**
 * **pip install imutils**
 * **pip install numpy**
+
+
+Reference --- https://www.pyimagesearch.com/2018/01/01/taking-screenshots-with-opencv-and-python/
