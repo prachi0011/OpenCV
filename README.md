@@ -7,10 +7,10 @@ Before running code on your system make sure you have following libraries instal
 -imutils
 -numpy
 
-run follwing commands on commandline
+# run follwing commands on commandline
 
-pip install pyautogui
-pip install opencv-python
-pip install opencv-contrib-python
-pip install imutils
-pip install numpy
+* **pip install pyautogui**
+* **pip install opencv-python**
+* **pip install opencv-contrib-python**
+* **pip install imutils**
+* **pip install numpy**
