@@ -27,10 +27,10 @@ if recording_style == 1:
     # define the codec
     fourcc = cv2.VideoWriter_fourcc(*"XVID")
     # create the video write object
-    out = cv2.VideoWriter("E:\\Prachi Agrawal\\Big Data JoVAC\\Images\\screenrecorddur.avi", fourcc, 20.0, (w,h))
+    out = cv2.VideoWriter("E:\\Prachi Agrawal\\screen.avi", fourcc, 20.0, (w,h))
     while True:
         img = pyautogui.screenshot()
-        frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+        frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR) ##screenshot converted from RGB(pil image) to BGR (openCV image)
         
         out.write(frame)
         cv2.imshow("screen", imutils.resize(frame, (600)))
@@ -53,7 +53,7 @@ if recording_style == 2:
     # define the codec
     fourcc = cv2.VideoWriter_fourcc(*"XVID")
     # create the video write object
-    out = cv2.VideoWriter("E:\\Prachi Agrawal\\Big Data JoVAC\\Images\\screenrecorddur.avi", fourcc, 20.0, (w,h))
+    out = cv2.VideoWriter("E:\\Prachi Agrawal\\screen.avi", fourcc, 20.0, (w,h))
     start_time = time.time()
     while(int(time.time() - start_time) < dur):
         img = pyautogui.screenshot()
